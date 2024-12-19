@@ -1,0 +1,24 @@
+<h2>Adicionar Automóvel</h2>
+<form (ngSubmit)="adicionarAutomovel()">
+  <label>Marca:
+    <input [(ngModel)]="marca" name="marca" required>
+  </label>
+  <br>
+  <label>Modelo:
+    <input [(ngModel)]="modelo" name="modelo" required>
+  </label>
+  <br>
+  <label>KM:
+    <input [(ngModel)]="km" name="km" type="number" required>
+  </label>
+  <br>
+  <label>Ano:
+    <input [(ngModel)]="ano" name="ano" type="number" required>
+  </label>
+  <br>
+  <label>Preço:
+    <input [(ngModel)]="preco" name="preco" type="number" required>
+  </label>
+  <br>
+  <button type="submit">Adicionar</button>
+</form>
